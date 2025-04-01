@@ -12,7 +12,7 @@ require (
 	github.com/prometheus/common v0.62.0
 	github.com/prometheus/procfs v0.16.0
 	golang.org/x/sys v0.30.0
-	google.golang.org/protobuf v1.36.5
+	google.golang.org/protobuf v1.36.6
 )
 
 require (
