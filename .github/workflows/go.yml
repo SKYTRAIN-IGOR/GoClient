@@ -46,14 +46,14 @@ jobs:
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
 
       - name: Run tests and check license
-        uses: dagger/dagger-for-github@019ea6794c5920cf0680a6291e3a793dbe3ebb54 # v7.0.4
+        uses: dagger/dagger-for-github@e47aba410ef9bb9ed81a4d2a97df31061e5e842e # v8.0.0
         with:
           version: "latest"
           verb: call
           args: -vvv --src . make --go-version ${{matrix.go_version}} --args 'check_license test'
 
       - name: Run style and unused
-        uses: dagger/dagger-for-github@019ea6794c5920cf0680a6291e3a793dbe3ebb54 # v7.0.4
+        uses: dagger/dagger-for-github@e47aba410ef9bb9ed81a4d2a97df31061e5e842e # v8.0.0
         if: ${{ matrix.go_version == '1.21' }}
         with:
           version: "latest"
