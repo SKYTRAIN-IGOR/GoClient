@@ -23,9 +23,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
       - name: Lint
-        uses: dagger/dagger-for-github@019ea6794c5920cf0680a6291e3a793dbe3ebb54 # v7.0.4
+        uses: dagger/dagger-for-github@710906f3073901ccd9c8fd38e18848c00d9892be # v8.1.0
         with:
           version: "latest"
           verb: call
